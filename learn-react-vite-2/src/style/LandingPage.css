@@ -1,0 +1,129 @@
+.landing-page-walpaper{
+    min-height: 30rem;
+    background: url('./assets/walpaper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    background-color: orange;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem 2rem;
+}
+
+.subtitles{
+    font-family: 'Poppins';
+    font-size: 2rem;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    flex-wrap: wrap;
+}
+
+.profile-picture{
+    background: url('./assets/andrew.jpg');
+    width: 10rem;
+    height: 10rem;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    border-radius: 50%;
+
+    filter: grayscale();
+    transition: 0.2s;
+}
+.profile-picture:hover{
+    background-size: 120%;
+}
+.profile-title{
+    color: white;
+    font-family: 'Gabarito';
+    width: 50%;
+}
+
+.profile-title h2{
+    font-size: 2rem;
+}
+.profile-title p{
+    font-family: 'Poppins';
+    font-weight: lighter;
+    font-size: 0.9rem;
+}
+
+.education-container{
+    display: flex;
+    font-family: 'Gabarito';
+    gap: 2rem;
+    flex-wrap: wrap;
+
+    margin-bottom: 2rem;
+}
+
+.education-item{
+    flex: 1 1;
+    min-width: 300px;
+    text-align: center;
+    background-color: rgb(240, 240, 240);
+
+    min-height: 20rem;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: 0.2s;
+}
+
+.education-item:hover{
+    min-height: 30rem;
+}
+
+#ui .image-container{
+    flex: 1 1;
+
+    background: url('./assets/fasilkom.png');
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+#smanika .image-container{
+    flex: 1 1;
+    background-image: url('./assets/walpaper.jpg');
+}
+
+
+
+
+
+.caraousel-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 2rem;
+}
+.caraousel-item{
+    flex: 1 1;
+    min-width: 300px;
+
+    height: 30vh;
+
+    background-color: rgb(200, 200, 200);
+
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+.caraousel-item:hover{
+    flex: 2 1;
+}

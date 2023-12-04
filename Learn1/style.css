@@ -1,0 +1,15 @@
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.topContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.button{
+    width: 2rem;
+}

@@ -1,0 +1,133 @@
+.navbar-wrapper{
+height: 12vh;
+box-shadow: 0 5px 10px gray;
+
+display: flex;
+justify-content: space-between;
+padding: 0 2rem;
+
+
+position: sticky;
+top: 0;
+
+z-index: 1;
+
+background: rgba(255, 255, 255, 0.8);
+backdrop-filter: blur(2px);
+}
+
+.navbar-menu{
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+gap: 1rem;
+}
+.navbar-logo{
+display: flex;
+align-items: center;
+}
+.navbar-logo h2{
+    font-family: 'Poppins';
+    text-align: left;
+    color: black;
+}
+.navbar-menu-button{
+padding: 1rem 2rem;
+border: none;
+border-radius: 2rem;
+
+background-color: black;
+color: white;
+
+font-family: 'Space Grotesk';
+
+transition: 0.2s;
+}
+
+.navbar-menu-button:hover{
+scale: 1.1;
+}
+
+.mobile-navbar-menu{
+display: flex;
+justify-content: center ;
+align-items: center;
+
+display: none;
+}
+
+.mobile-navbar-menu-button{
+font-size: 2rem;
+transition: 0.2s;
+}
+
+.navbar-started{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.navbar-started-button{
+padding: 1rem 2rem;
+border: none;
+
+font-family: 'Poppins';
+transition: 0.2s;
+}
+
+.navbar-started-button:hover{
+    scale: 1.1;
+    border-radius: 1rem;
+}
+
+.mobile-pop-up{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+
+    top: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 750px){
+.navbar-menu{
+    display: none;
+}
+.mobile-navbar-menu{
+    display: flex;
+}
+.navbar-menu-button{
+    background-color: white;
+    color: black;
+}
+.mobile-navbar-menu-button:hover{
+    scale: 1.2;
+}
+
+#mobile{
+    width: 50%;
+    margin: 10px;
+    border-radius: 0;
+}
+.mobile-pop-up{
+    display: flex;
+}
+.mobile-pop-up-close-button{
+    font-size: 3rem;
+    transition: 0.2s;
+    color: white;
+}
+.mobile-pop-up-close-button:hover{
+    scale: 1.2;
+}
+
+}
